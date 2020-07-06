@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+li, a, button {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   color: #Edf0f1;
+   text-decoration: none;
+}
+
+header {
+   background-color: #125186;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+
+h1 {
+   font-family: 'Bangers', cursive;
+   color: #fdcb12;
+   text-shadow: 0px 0px 7px #dbdbdb;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #094da1;
+   cursor: pointer;
+}
+
+.pesquisa {
+   border: 1px solid black;
+}
+
+.txtBusca {
+   border: none;
+   float: left;
+   padding-left: 5px;
+   font-size: 15px;
+   height: 32px;
+   transition: all 0.3s ease 0s;
+}
+
+.txtBusca:focus {
+   border: none;
+   outline: none;
+}
+
+.btnBusca {
+   border: none;
+   float: right;
+   height: 32px;
+   width: 60px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.5s ease 0s;
+}
+
+.btnBusca:hover {
+   outline: 0;
+}
+
+.btnBusca:hover {
+   background-color: red;
+   outline: none;
+}
+
+.btnBusca:focus {
+   border: none;
+   outline: none;
+}
+
+.btnBusca img {
+   width: 50%;
+   padding: 1px;
+   transition: all .5s;
+}
+
+.btnBusca img:hover {
+   -webkit-transform: rotateZ(360deg);
+   transform: rotateZ(360deg);
+}
+
+.cta button {
+   padding: 9px 25px;
+   margin-left: 5px;
+   color: #09224e;
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: all 0.5s ease 0s;
+}
+
+.cta button:hover {
+   background-color: #fdcb12;
+}
+
+/* Responsividade para navbar */
+
+@media screen and (max-width:680px) {
+   header {
+      background-color: #125186;
+      display: grid;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 15px;
+   }
+
+   .pesquisa {
+      margin: 15px;
+   }
+
+}
