@@ -26,15 +26,20 @@ const Cart = () => {
 
     return (
         <div className="cart">
-            <Purchase onSubmit={addNewPurchase}/>
-            {purchs.map(({id, value}, index) => (
-                <ListItem 
+            <Purchase onSubmit={addNewPurchase} />
+            {purchs.map(({ id, value }, index) => (
+                <ListItem
                     key={id}
                     value={value}
                     onChange={(event) => updatePurchase(event, index)}
                     onDelete={() => deletePurhase(index)}
                 />
             ))}
+            <div>
+                <pre>
+                    {JSON.stringify(purchs, null, 4)}
+                </pre>
+            </div>
         </div>
     )
 
