@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import { getAllPokemon, getPokemon } from '../../services/pokemon';
 
 import Card from "../Card/index"
-import Cart from '../Cart/Cart';
+import Cart from '../Cart/index.jsx';
 
 import "./style.css";
-import imgCompra from "../../assets/carrinho.png";
 
 export default function Main() {
 
@@ -76,13 +75,7 @@ export default function Main() {
                         <button onClick={prev}>Anterior</button> <button onClick={next}>Próximo</button>
                      </div>
                   </div>
-                  <div className="carrinho">
-                     {/* <h1> <img width="35px" src={imgCompra} /> Carrinho  </h1>
-                     <div className="productSale"> {pokemonData.name} </div> */}
-                     <Cart />
-                     {/* <div className="total">Total</div>
-                     <button>FINALIZAR</button> */}
-                  </div>
+                  <Cart />
                </>
             )
          }

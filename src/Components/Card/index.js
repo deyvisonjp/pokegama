@@ -28,7 +28,7 @@ function Card({ pokemon }) {
          <div className="cardPrice">
             <h4> R$ {price}</h4>
          </div>
-         <button className="cardButton">Comprar</button>
+         <button className="cardButton" onClick="">Comprar</button>
       </div>
    )
 }
