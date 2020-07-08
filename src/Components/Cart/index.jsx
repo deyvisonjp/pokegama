@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './style.css'
-import imgCompra from "../../assets/carrinho.png";
 
 const Cart = ( pokemon ) => {
    return (
