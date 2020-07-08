@@ -13,8 +13,7 @@ export default function Header() {
             <button className="btnBusca" > <img src={pokebola} alt="pokebola buscar"/> </button>
          </div>
          <nav className="nav_links">
-            <a href="" className="cta"><button>Login</button></a>
-            <a href="" className="cta"><button>Carrinho</button></a>
+            <a href="https://github.com/deyvisonjp" className="cta">Deyvison Github</a>
          </nav>
       </header>
    )
