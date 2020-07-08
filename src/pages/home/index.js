@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "../../Components/Header";
 import Main from "../../Components/Main";
-// import Footer from "../../Components/Footer";
+import Footer from "../../Components/Footer";
 
 export default function Home() {
 
@@ -11,17 +11,9 @@ export default function Home() {
    return (
       <div className="Home">
          
-         <Header>
-
-         </Header>
-
-         <Main>
-
-         </Main>
-
-         {/* <Footer>
-
-         </Footer> */}
+         <Header/>
+         <Main/>
+         <Footer />
       </div>
    )
 
