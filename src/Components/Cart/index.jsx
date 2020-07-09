@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css'
 
-const Cart = ( pokemon ) => {
+const Cart = ( pokemons, handleBuy ) => {
    return (
       <div className="carrinho">
          <h1> <img width="35px" src={pokemon.image} /> Carrinho  </h1>

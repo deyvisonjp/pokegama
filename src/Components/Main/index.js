@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getAllPokemon, getPokemon } from '../../services/pokemon';
 
 import Card from "../Card/index"
-import Cart from '../Cart/index.jsx';
+import Cart from '../Cart/index';
 
 import "./style.css";
 

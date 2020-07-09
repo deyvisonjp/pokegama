@@ -1,5 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Projeto Loja Pokemon desenvolvido para Assignments Gama Academy
 
+Projeto desenvolvido utilizando React e a API [PokéAPI](https://pokeapi.co/) 
+Link para o projeto [PokeGama](https://pokegamastore.netlify.app/)
+
+---------------------------------------------------------------------------------
 ## Available Scripts
 
 In the project directory, you can run:
