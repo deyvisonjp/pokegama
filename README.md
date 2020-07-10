@@ -1,7 +1,7 @@
 # Projeto Loja Pokemon desenvolvido para Assignments Gama Academy
 
-Projeto desenvolvido utilizando React e a API [PokéAPI](https://pokeapi.co/) 
-Link para o projeto [PokeGama](https://pokegamastore.netlify.app/)
+- Projeto desenvolvido utilizando React e a [PokéAPI](https://pokeapi.co/) 
+- Link para o projeto [PokeGama](https://pokegamastore.netlify.app/)
 
 ---------------------------------------------------------------------------------
 ## Available Scripts
