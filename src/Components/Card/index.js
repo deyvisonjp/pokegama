@@ -2,13 +2,15 @@ import React from "react";
 
 import './style.css'
 
-function Card({ pokemon }) {
-   let price = (pokemon.base_experience * 0.2).toFixed(2)
+function Card({ pokemon, buyPokemonFunction }) {
+   let img = `https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png`;
+   let price = (pokemon.base_experience * 0.2);
+   var priceReal = price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 
    return (
       <div className="card">
          <div className="cardImg">
-            <img width="140px" src={`https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png`} alt={pokemon.name} />
+            <img width="140px" src={img} alt={pokemon.name} />
          </div>
          <div className="cardName">
             <h3>{pokemon.name}</h3>
@@ -26,9 +28,15 @@ function Card({ pokemon }) {
             <p> Experiência - {pokemon.base_experience} </p>
          </div>
          <div className="cardPrice">
-            <h4> R$ {price}</h4>
+            <h4> R$ {priceReal}</h4>
          </div>
-         <button className="cardButton">Comprar</button>
+         <button type='submit' className="cardButton" onClick={() => {
+            buyPokemonFunction({
+               imgUrl: img,
+               name: pokemon.name,
+               price: price
+            })
+         }}> Comprar</button>
       </div>
    )
 }

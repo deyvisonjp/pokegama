@@ -12,6 +12,7 @@ export default function Main() {
    const [nextUrl, setNextUrl] = useState('');
    const [prevUrl, setPrevUrl] = useState('');
    const [loading, setLoading] = useState(true);
+   const [pokemonsComprados, setPokemonsComprados] = useState([]);
    const pokeUrl = 'https://pokeapi.co/api/v2/pokemon';
 
    useEffect(() => {
@@ -54,7 +55,15 @@ export default function Main() {
          })
       );
 
-      setPokemonData(_pokemonData)
+      setPokemonData(_pokemonData);
+   }
+
+   function handlePurchase(pokemonPurch) {
+      setPokemonsComprados([...pokemonsComprados, pokemonPurch])
+   }
+
+   function ResetCart() {
+      setPokemonsComprados([])
    }
 
    return (
@@ -68,14 +77,17 @@ export default function Main() {
                      </div>
                      <div className="grid-container">
                         {pokemonData.map((pokemon, i) => {
-                           return <Card key={i} pokemon={pokemon} />
+                           return <Card key={i} pokemon={pokemon}
+                              buyPokemonFunction={handlePurchase}
+                              pokemonNameUrl={pokemon}
+                           />
                         })}
                      </div>
                      <div className="btn">
                         <button onClick={prev}>Anterior</button> <button onClick={next}>Próximo</button>
                      </div>
                   </div>
-                  <Cart />
+                  <Cart resetarCarrinho={ResetCart} pokemons={pokemonsComprados} />
                </>
             )
          }

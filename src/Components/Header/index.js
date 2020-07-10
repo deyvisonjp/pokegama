@@ -3,6 +3,7 @@ import React from "react";
 import "./style.css";
 import pokebola from "../../assets/pokebola.png";
 import github from "../../assets/github.png";
+import linkedin from "../../assets/linkedin.png";
 
 
 export default function Header() {
@@ -15,6 +16,7 @@ export default function Header() {
          </div>
          <nav className="nav_links">
             <a href="https://github.com/deyvisonjp" className="cta"> <img width="45px" src={github}/></a>
+            <a href="https://www.linkedin.com/in/deyvisonjpaula/" className="cta"> <img width="45px" src={linkedin}/></a>
          </nav>
       </header>
    )

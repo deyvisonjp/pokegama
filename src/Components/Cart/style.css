@@ -1,12 +1,16 @@
 .carrinho {
    width: 90%;
-   height: 350px;
+   height: auto;
    border: 1px solid rgb(14, 13, 13);
    text-align: center;
    border-radius: 10px;
    margin: 50px 5px;
    padding: 5px;
    box-shadow: -2px -2px 8px #125185;
+}
+
+.carrinho h1 {
+   margin: 10px auto;
 }
 
 .carrinho button {
@@ -20,6 +24,12 @@
     background-color: #094da1;
     font-size: 25px;
     cursor: pointer;
+}
+
+.itemCarrinho {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 /* Responsividade para carrinho */
