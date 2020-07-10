@@ -46,7 +46,7 @@ const Cart = ({ resetarCarrinho, pokemons }) => {
                <p>Total</p>
             </div>
             <div className="">
-               <p>R$ {totalCompras.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
+               <p>{totalCompras.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
             </div>
          </div>
          <div className="">
@@ -61,14 +61,6 @@ const Cart = ({ resetarCarrinho, pokemons }) => {
       </div>
    )
 }
-// < div className = "carrinho" >
-//    pokemonsList.map(pokemon => (
-//       <h1> <img width="35px" src={pokemon.image} /> Carrinho  </h1>
-//       <div className="productSale"> {pokemon.name} </div>
-//       <div className="total"> {pokemon.price} </div>
-
-//       <button>FINALIZAR</button>
-// </div >
 
 
 export default Cart;

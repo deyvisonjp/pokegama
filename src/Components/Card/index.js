@@ -28,7 +28,7 @@ function Card({ pokemon, buyPokemonFunction }) {
             <p> Experiência - {pokemon.base_experience} </p>
          </div>
          <div className="cardPrice">
-            <h4> R$ {priceReal}</h4>
+            <h4>{priceReal}</h4>
          </div>
          <button type='submit' className="cardButton" onClick={() => {
             buyPokemonFunction({

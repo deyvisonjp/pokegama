@@ -32,6 +32,14 @@
    align-items: center;
 }
 
+.total {
+   color: #125183;
+   font-size: larger;
+   border-top: 1px solid #084da1;
+   margin: 5px;
+}
+
+
 /* Responsividade para carrinho */
 
 @media screen and (max-width:750px) {
