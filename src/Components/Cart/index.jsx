@@ -35,7 +35,7 @@ const Cart = ({ resetarCarrinho, pokemons }) => {
                   </div>
                   <div>  <h3>{pokemon.name}</h3> </div>
                   <div className="">
-                     <p>R$ {pokemon.price}</p>
+                     <p>{pokemon.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
                   </div>
                </div>
             ))
