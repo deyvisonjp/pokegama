@@ -58,3 +58,11 @@ h3 {
    background-color: yellow;
    cursor: pointer;
 }
+
+/* Responsividade para carrinho */
+
+@media screen and (max-width:750px) {
+   .card {
+      margin: 10px auto;
+   }
+}

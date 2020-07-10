@@ -32,3 +32,15 @@ main {
    font-size: 1em;
    cursor: pointer;
 }
+
+/* Responsividade para carrinho */
+
+@media screen and (max-width:750px) {
+   main {
+      display: block;
+      margin: 0 auto;
+   }
+   .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
+   }
+}

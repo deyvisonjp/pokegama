@@ -4,7 +4,7 @@
    border: 1px solid rgb(14, 13, 13);
    text-align: center;
    border-radius: 10px;
-   margin: 50px 5px;
+   margin: 50px auto;
    padding: 5px;
    box-shadow: -2px -2px 8px #125185;
 }
@@ -37,14 +37,4 @@
    font-size: larger;
    border-top: 1px solid #084da1;
    margin: 5px;
-}
-
-
-/* Responsividade para carrinho */
-
-@media screen and (max-width:750px) {
-   main {
-      display: block;
-   }
-
 }
