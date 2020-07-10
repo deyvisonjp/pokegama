@@ -13,7 +13,7 @@
    margin: 10px auto;
 }
 
-.carrinho button {
+.carrinho button, .btnConcluir {
    font-family: 'Bangers', cursive;
     color: #fdcb12;
     text-shadow: 0px 0px 7px #dbdbdb;
@@ -37,4 +37,9 @@
    font-size: larger;
    border-top: 1px solid #084da1;
    margin: 5px;
+}
+
+.divModal h2 {
+   color: #125183;
+   padding: 15px;
 }
